@@ -1,0 +1,120 @@
+{
+  "FUNCTION": {
+    "prefix": "func",
+    "body": [
+      "FUNCTION ${1:Constant} \"${2:var}\" -> ${3:VAR} \"${4:toVar}\""
+    ],
+    "description": "Insert Function"
+  },
+  "PRINT": {
+    "prefix": "print",
+    "body": [
+      "PRINT ${1:Hello}"
+    ],
+    "description": "Insert Print function"
+  },
+  "GIB": {
+    "prefix": "gib",
+    "body": [
+      "GIB ${1:SHIBE}"
+    ],
+    "description": "Insert GIB Command!"
+  },
+  "SET": {
+    "prefix": "set",
+    "body": [
+      "SET ${1:SOURCE} \"${2:}\""
+    ],
+    "description": "Insert SET Command!"
+  },
+  "KEYCHECK": {
+    "prefix": "key",
+    "body": [
+      "KEYCHECK",
+      "  KEYCHAIN ${1:SUCCESS} ${2:OR}",
+      "      KEY \"${3:Logout}\" ${4:SOURCE}"
+    ],
+    "description": "Insert KEYCHAIN block!"
+  },
+  "REQUEST": {
+    "prefix": "req",
+    "body": [
+      "REQUEST ${1:GET} \"${0:URL}\""
+    ],
+    "description": "Insert Request block!"
+  },
+  "RECAPTCHA": {
+    "prefix": "recap",
+    "body": [
+      "RECAPTCHA \"${1:URL}\" \"${2:SITEKEY}\" -> VAR ${3:NAME}"
+    ],
+    "description": "Insert Recaptcha block"
+  },
+  "CAPTCHA": {
+    "prefix": "capt",
+    "body": [
+      "CAPTCHA \"${1:URL}\" -> VAR \"${0:NAME}\""
+    ],
+    "description": "CAPTCHA block"
+  },
+  "PARSE": {
+    "prefix": "parse",
+    "body": [
+      "PARSE ${1:SOURCE} ${2:JSON} \"${3:FIELD}\" -> ${4:VAR} \"${5:NAME}\""
+    ],
+    "description": "PARSE block"
+  },
+  "BYPASSCF": {
+    "prefix": "bypass",
+    "body": [
+      "BYPASSCF \"${0:URL}\""
+    ],
+    "description": "BYPASSCF Block!"
+  },
+  "NAVIGATE": {
+    "prefix": "nav",
+    "body": [
+      "NAVIGATE \"${0:URL}\""
+    ],
+    "description": "NAVIGATE block!"
+  },
+  "BROWSERACTION": {
+    "prefix": "browser",
+    "body": [
+      "BROWSERACTION ${0:ACTION}"
+    ],
+    "description": "BROWSERACTION block!"
+  },
+  "ELEMENTACTION": {
+    "prefix": "element",
+    "body": [
+      "ELEMENTACTION ${1:ACTION} \"${0:testid}\""
+    ],
+    "description": "ELEMENTACTION block!"
+  },
+  "IF": {
+    "prefix": "if",
+    "body": [
+      "IF \"${1:STRING1}\" ${2:CONDITION} \"${3:STRING2}\"",
+      "$0",
+      "ENDIF"
+    ],
+    "description": "IF block!"
+  },
+  "WHILE": {
+    "prefix": "while",
+    "body": [
+      "WHILE \"${1:STRING1}\" ${2:CONDITION} \"${3:STRING2}\"",
+      "$0",
+      "ENDWHILE"
+    ],
+    "description": "WHILE block!"
+  },
+  "JUMP": {
+    "prefix": "jump",
+    "body": [
+      "JUMP #${0:LABEL}"
+    ],
+    "description": "JUMP block!"
+  }
+  }

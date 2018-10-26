@@ -1,0 +1,35 @@
+{
+    "name": "loliscript",
+    "displayName": "LoliScript",
+    "description": "Loliscript language support",
+    "version": "1.0.0",
+    "publisher": "Choempie",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Choempie"
+    },
+    "icon": "LoliScript.png",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "loliscript",
+            "aliases": ["LoliScript", "loliscript"],
+            "extensions": [".loli"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "loliscript",
+            "scopeName": "source.loli",
+            "path": "./syntaxes/loliscript.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "loliscript",
+            "path": "./snippets/LoliScript.json"
+        }]
+    }
+}
